@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 /* 
 font-family: 'Crimson Pro', serif;
 font-family: 'Lora', serif;
-font-family: 'Montserrat', sans-serif; */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+font-family: 'Montserrat', sans-serif; 
+*/
 body {
   background-color: #181719;
   box-sizing: border-box;
@@ -27,6 +28,7 @@ header {
   position: absolute;
   height: 10%;
   width: 100%;
+  margin-top: 12px;
 }
 
 nav {
@@ -43,6 +45,12 @@ nav {
   display: flex;
   width: 100%;
 }
+
+.nav-link > a:hover {
+  text-decoration: underline red 3px;
+  text-underline-offset: 10px;
+}
+
 li > a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -60,6 +68,7 @@ li > a {
   font-size: 1em;
   padding: 5px;
   margin: 5px;
+  padding: 10px;
 }
 
 main {
@@ -98,15 +107,58 @@ main {
   border-radius: 10px;
 }
 .designer-profile-card {
-  /* background-color: red; */
-  height: 30%;
-  width: 55%;
-  transform: translate(60%, -50%);
+  background-color: #181719;
+  border-radius: 10px;
+  height: 35%;
+  width: 50%;
+  transform: translate(80%, -50%);
   position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px,
+    rgba(0, 0, 0, 0.15) 0px 2px 6px 2px;
+}
+.profile {
+  height: 40%;
+  margin-top: 5px;
 }
 
-footer {
-  text-align: center;
+.profile-image-container {
+  width: 30%;
+  align-items: center;
+}
+.profile-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("/images/photo2.png");
+  width: 50%;
+  height: 75%;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.profile-title {
+  margin: 12px;
+  margin-left: 30px;
+  width: 80%;
+  transform: translateY(-12px);
+  /* background-color: green; */
+}
+.profile-name {
+  /* background-color: red; */
+  margin-left: -10px;
+  height: 60%;
+  transform: translateY(7px);
+  line-height: 12px;
+}
+.profile-name > h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.profile-name > h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #828282;
 }
 
 button {
@@ -118,28 +170,23 @@ button {
   outline: none;
   cursor: pointer;
   color: white;
-  margin-right: 20px;
+  margin-right: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+button:hover {
+  transition: 0.1s ease-out;
+  margin-right: 35px;
+  background-color: rgb(255, 94, 94);
 }
 
 .fa-chevron-right {
-  cursor: pointer;
-  animation-name: arrow-icon;
   animation-iteration-count: infinite;
-  /* animation-direction: reverse; */
-  animation-duration: 2s;
   animation-timing-function: linear;
+  animation-name: arrow-icon;
+  animation-duration: 2s;
 }
-@keyframes arrow-icon {
-  0% {
-    margin-right: 1%;
-  }
-  20% {
-    margin-left: 2%;
-  }
-  40% {
-    margin-left: 4%;
-  }
-  60% {
-    margin-left: 6%;
-  }
+
+footer {
+  text-align: center;
 }
