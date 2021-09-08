@@ -173,8 +173,26 @@ button:hover {
 
 @media screen and (max-width: 500px) {
   nav {
+    transform: translate(110px, 100px);
+    align-content: center;
+    align-items: center;
     visibility: hidden;
+    height: 500px;
+    padding: 0;
+    margin: 0;
   }
+  .nav-links {
+    margin-left: -15px;
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+
+  .nav-link {
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
   .logo {
     position: absolute;
   }
