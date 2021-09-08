@@ -5,12 +5,14 @@ font-family: 'Crimson Pro', serif;
 font-family: 'Lora', serif;
 font-family: 'Montserrat', sans-serif; 
 */
-body {
+body,
+a {
   background-color: #181719;
   box-sizing: border-box;
+  text-decoration: none;
+  color: #ffffff;
   padding: 0;
   margin: 0;
-  color: #ffffff;
 }
 .flex {
   display: flex;
@@ -19,30 +21,24 @@ body {
   display: grid;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-/* header {
+header {
   justify-content: space-between;
   position: absolute;
+  margin-top: 12px;
+  display: flex;
   height: 10%;
   width: 100%;
-  margin-top: 12px;
-} */
-
-/* nav {
-  align-content: center;
-  margin-right: 10%;
+}
+nav,
+.logo {
+  align-items: center;
+  margin-right: 9.2%;
   width: 37%;
-} */
+}
 
 .nav-links {
   justify-content: space-between;
-  word-spacing: 100px;
-  align-items: center;
   list-style: none;
-  display: flex;
   width: 100%;
 }
 
@@ -56,37 +52,32 @@ li > a {
   font-weight: 500;
 }
 .logo {
-  align-items: center;
   margin-left: 6%;
-  display: flex;
 }
 .logo > h1 {
-  border: 2px white solid;
   font-family: "Crimson Pro", serif;
-  text-transform: uppercase;
+  border: 2px white solid;
   font-weight: 200;
   font-size: 1em;
-  padding: 5px;
-  margin: 5px;
   padding: 10px;
 }
 
 main {
-  height: 90vh;
+  height: 710px;
 }
 .text-section {
+  position: relative;
+  margin-left: 6%;
   height: 50%;
   width: 30%;
   top: 28%;
-  margin-left: 6%;
-  position: relative;
 }
 
 .text-section > p {
   font-family: "Montserrat", sans-serif;
+  line-height: 30px;
   font-weight: 400;
   width: 70%;
-  line-height: 25px;
 }
 .text-section > h1 {
   font-family: "Lora", serif;
@@ -94,60 +85,58 @@ main {
   font-size: 2.5em;
 }
 .image-section {
-  height: 70%;
-
   transform: translateY(25%);
-  width: 45%;
   margin-left: 10%;
+  margin-top: 1%;
+  height: 70%;
+  width: 45%;
 }
 .bg-image {
   background-image: url("/images/photo1.png");
   background-size: cover;
-  height: 100%;
   border-radius: 10px;
+  height: 100%;
 }
 .designer-profile-card {
+  transform: translate(80%, -50%);
   background-color: #181719;
   border-radius: 10px;
-  height: 35%;
-  width: 50%;
-  transform: translate(80%, -50%);
   position: absolute;
+  width: 50%;
+  height: 35%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px,
     rgba(0, 0, 0, 0.15) 0px 2px 6px 2px;
 }
 .profile {
-  height: 40%;
   margin-top: 5px;
+  height: 40%;
 }
 
 .profile-image-container {
-  width: 30%;
   align-items: center;
+  width: 30%;
 }
 .profile-image {
-  background-size: contain;
-  background-repeat: no-repeat;
   background-image: url("/images/photo2.png");
-  width: 50%;
-  height: 75%;
-  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 50%;
+  margin: auto;
+  height: 75%;
+  width: 50%;
 }
 
 .profile-title {
-  margin: 12px;
-  margin-left: 30px;
-  width: 80%;
   transform: translateY(-12px);
-  /* background-color: green; */
+  margin-left: 30px;
+  margin: 12px;
+  width: 80%;
 }
 .profile-name {
-  /* background-color: red; */
-  margin-left: -10px;
-  height: 60%;
   transform: translateY(7px);
+  margin-left: -10px;
   line-height: 12px;
+  height: 60%;
 }
 .profile-name > h1 {
   font-family: "Montserrat", sans-serif;
@@ -162,74 +151,18 @@ main {
 }
 
 button {
+  font-family: "Montserrat", sans-serif;
   background-color: red;
-  padding: 15px;
-  margin-top: 10px;
-  width: 120px;
-  border: none;
-  outline: none;
+  margin-right: 25px;
+  margin-top: 15px;
+  font-weight: 700;
   cursor: pointer;
   color: white;
-  margin-right: 25px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  outline: none;
+  padding: 20px;
+  width: 120px;
+  border: none;
 }
 button:hover {
-  transition: 0.1s ease-out;
-  margin-right: 35px;
   background-color: rgb(255, 94, 94);
-}
-
-.fa-chevron-right {
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-name: arrow-icon;
-  animation-duration: 2s;
-}
-
-footer {
-  text-align: center;
-}
-
-@media screen and (min-width: 500px) {
-  nav {
-    align-content: center;
-    margin-right: 10%;
-    width: 37%;
-  }
-  header {
-    justify-content: space-between;
-    position: absolute;
-    height: 10%;
-    width: 100%;
-    margin-top: 12px;
-    display: flex;
-  }
-  .fa-bars {
-    visibility: hidden;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  nav {
-    visibility: hidden;
-    width: 37%;
-  }
-
-  header > i {
-    transform: translatex(-30px);
-  }
-
-  header {
-    justify-content: space-between;
-    position: absolute;
-    height: 10%;
-    width: 100%;
-    margin-top: 12px;
-    display: flex;
-    align-items: center;
-  }
-  .fa-times {
-    display: none;
-  }
 }
