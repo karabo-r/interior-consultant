@@ -166,3 +166,24 @@ button {
 button:hover {
   background-color: rgb(255, 94, 94);
 }
+
+.menu-icons {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    visibility: hidden;
+  }
+  .logo {
+    position: absolute;
+  }
+  .menu-icons {
+    margin-right: 25px;
+    display: inherit;
+    margin-top: 15px;
+  }
+  .fa-times {
+    display: none;
+  }
+}
