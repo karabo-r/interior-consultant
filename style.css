@@ -166,3 +166,42 @@ button {
 button:hover {
   background-color: rgb(255, 94, 94);
 }
+
+.menu-icons {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    transform: translate(110px, 100px);
+    align-content: center;
+    align-items: center;
+    visibility: hidden;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-links {
+    margin-left: -15px;
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+
+  .nav-link {
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .logo {
+    position: absolute;
+  }
+  .menu-icons {
+    margin-right: 25px;
+    display: inherit;
+    margin-top: 15px;
+  }
+  .fa-times {
+    display: none;
+  }
+}
