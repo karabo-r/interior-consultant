@@ -1,28 +1,15 @@
-const menuBtn = document.querySelector(".fa-bars");
-const exitBtn = document.querySelector(".fa-times");
-const logo = document.querySelector(".logo");
-const navBar = document.querySelector("nav");
-const mainSec = document.querySelector("main");
-const footer = document.querySelector("footer");
+const displayMenu = () => {
+  document.querySelector(".fa-bars").style.visibility = "hidden";
+  document.querySelector(".logo").style.visibility = "hidden";
+  document.querySelector("main").style.visibility = "hidden";
+  document.querySelector("nav").style.visibility = "inherit";
+  document.querySelector(".fa-times").style.display = "inherit";
+};
 
-function displayMenu() {
-  menuBtn.addEventListener("click", () => {
-    logo.style.display = "none";
-    menuBtn.style.display = "none";
-    footer.style.display = "inherit";
-
-    exitBtn.style.display = "inherit";
-    navBar.style.visibility = "inherit";
-    mainSec.style.visibility = "hidden";
-  });
-  exitBtn.addEventListener("click", () => {
-    footer.style.display = "";
-    logo.style.display = "inherit";
-    menuBtn.style.display = "inherit";
-    exitBtn.style.display = "none";
-    navBar.style.visibility = "hidden";
-    mainSec.style.visibility = "inherit";
-  });
-}
-
-displayMenu();
+const hideMenu = () => {
+  document.querySelector(".fa-bars").style.visibility = "";
+  document.querySelector(".logo").style.visibility = "";
+  document.querySelector("main").style.visibility = "";
+  document.querySelector("nav").style.visibility = "";
+  document.querySelector(".fa-times").style.display = "";
+};
