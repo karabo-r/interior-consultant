@@ -189,19 +189,62 @@ button:hover {
   }
 
   .nav-link {
-    margin: auto;
     margin-bottom: 50px;
+    transform: translatex(-10%);
   }
 
   .logo {
     position: absolute;
   }
   .menu-icons {
-    margin-right: 25px;
+    margin-right: 6%;
     display: inherit;
     margin-top: 15px;
   }
   .fa-times {
+    display: none;
+  }
+  main {
+    transform: translateY(90px);
+    display: grid !important;
+    grid-template-rows: 50% 50%;
+    height: 680px;
+    width: 100%;
+  }
+  .text-section {
+    width: 100%;
+    transform: translatey(-90px);
+    height: 100%;
+  }
+  .text-section p {
+    line-height: 25px;
+    width: 90%;
+  }
+  .image-section {
+    transform: translate(10px, -40px);
+    width: 95%;
+    margin-left: 0;
+    height: 80%;
+  }
+  .designer-profile-card {
+    transform: translate(9%, -50%);
+    width: 90%;
+    height: 60%;
+  }
+
+  .profile-image-container {
+    width: 30%;
+  }
+  .profile-name {
+    margin-left: 0px;
+    transform: translateY(10%);
+  }
+  .profile-title {
+    font-size: 13px;
+    width: 80%;
+  }
+  footer {
+    transform: translateY(-15px);
     display: none;
   }
 }
