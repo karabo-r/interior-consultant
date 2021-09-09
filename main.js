@@ -4,6 +4,7 @@ const displayMenu = () => {
   document.querySelector("main").style.visibility = "hidden";
   document.querySelector("nav").style.visibility = "inherit";
   document.querySelector(".fa-times").style.display = "inherit";
+  document.querySelector("footer").style.display = "inherit";
 };
 
 const hideMenu = () => {
@@ -12,4 +13,5 @@ const hideMenu = () => {
   document.querySelector("main").style.visibility = "";
   document.querySelector("nav").style.visibility = "";
   document.querySelector(".fa-times").style.display = "";
+  document.querySelector("footer").style.display = "";
 };
