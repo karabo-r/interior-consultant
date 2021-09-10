@@ -22,9 +22,13 @@
 
 ## Overview
 
-![screenshot](https://github.com/karabo-r/interior-consultant/blob/main/images/mobile-page.png)
-![screenshot](https://github.com/karabo-r/interior-consultant/blob/main/images/mobile-menu.png)
-![screenshot](https://github.com/karabo-r/interior-consultant/blob/main/images/desktop-page.png)
+Made with Html & Css
+
+ ### - NOTE : click solution to view the a different version of the page for larger screens.
+ 
+| [![](/images/mobile-page.jpg)](http://videoblocks.com) | [![](/images/mobile-menu.jpg)](http://audioblocks.com) |     
+| :----------------------------------------------------: | :----------------------------------------------------: | 
+
 
 ## Features
 
