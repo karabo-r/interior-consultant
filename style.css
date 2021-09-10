@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-/* 
-font-family: 'Crimson Pro', serif;
-font-family: 'Lora', serif;
-font-family: 'Montserrat', sans-serif; 
-*/
+
 body,
 a {
   background-color: #181719;
@@ -170,6 +166,9 @@ button:hover {
 .menu-icons {
   display: none;
 }
+footer {
+  font-size: 17px;
+}
 
 @media screen and (max-width: 500px) {
   nav {
@@ -181,10 +180,10 @@ button:hover {
     width: 100%;
   }
   .nav-links {
-    display: block;
-    padding: 0;
     text-align: center;
     font-size: 20px;
+    display: block;
+    padding: 0;
   }
 
   .nav-link {
@@ -222,7 +221,7 @@ button:hover {
   }
   .image-section {
     transform: translate(10px, -40px);
-    width: 95%;
+    width: 96%;
     margin-left: 0;
     height: 80%;
   }
@@ -246,7 +245,5 @@ button:hover {
   footer {
     transform: translateY(-15px);
     display: none;
-  }
-  a {
   }
 }
