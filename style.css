@@ -172,7 +172,7 @@ footer {
 
 @media screen and (max-width: 500px) {
   nav {
-    transform: translate(8%, 100px);
+    transform: translate(7.1%, 100px);
     visibility: hidden;
     overflow-x: hidden;
     height: 500px;
