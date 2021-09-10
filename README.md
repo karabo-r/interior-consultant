@@ -24,7 +24,7 @@
 
 Made with Html & Css
 
- ### - NOTE : click solution to view the a different version of the page for larger screens.
+ ###  NOTE : click solution to view the a different version of the page for larger screens.
  
 | [![](/images/mobile-page.jpg)](http://videoblocks.com) | [![](/images/mobile-menu.jpg)](http://audioblocks.com) |     
 | :----------------------------------------------------: | :----------------------------------------------------: | 
